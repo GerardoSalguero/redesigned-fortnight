@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+    --Pale_blue: hsl(225, 100%, 94%);
+    --Bright_blue: hsl(245, 75%, 52%);
+    --Very_pale_blue: hsl(225, 100%, 98%);
+    --Desaturated_blue: hsl(224, 23%, 55%);
+    --Dark_blue: hsl(223, 47%, 23%);
+}
+
+body {
+    font-size: 16px;
+    font-family: "Red Hat Display", sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-color: var(--Pale_blue);
+    background-size: contain;
+}
+
+.attribution {
+    font-size: 16px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+.conteiner-hero {
+    background-image: url(images/illustration-hero.svg);
+    background-repeat: no-repeat;
+    height: 162px;
+    background-size: cover;
+}
+
+.conteiner-order-summary-component {
+    margin: 75px auto;
+    width: 328px;
+    height: 570px;
+    background-color: white;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    -o-border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.conteiner-order {
+    margin-top: 20px;
+}
+
+.conteiner-order h1 {
+    font-weight: 900;
+    color: var(--Dark_blue);
+    font-size: 22px;
+    text-align: center;
+}
+
+.conteiner-order p {
+    font-size: 16px;
+    color: hsl(230, 7%, 53%);
+    font-weight: 500;
+    padding: 0 30px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.plan {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--Very_pale_blue);
+    height: 82px;
+    width: 280px;
+    margin: 0 auto 32px;
+    -o-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    border-radius: 12px;
+}
+
+.payment-cancel-order {
+    margin: 40px auto;
+    width: 100%;
+}
+
+.payment {
+    border: 1px solid var(--Bright_blue);
+    margin-top: -10px;
+    background-color: var(--Bright_blue);
+    font-size: 15px;
+    height: 53px;
+    padding: 15px;
+    color: white;
+    width: 280px;
+    -o-border-radius: 11px;
+    -webkit-border-radius: 11px;
+    -moz-border-radius: 11px;
+    -ms-border-radius: 11px;
+    border-radius: 11px;
+    font-weight: 700;
+    margin: -10px auto;
+    box-shadow: 0 1.1rem 1rem rgba(0, 0, 0, 0.2);
+    display: block;
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+.cancel-container {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.cancel {
+    margin-top: -30px;
+    font-weight: 900;
+    color: hsl(230, 7%, 53%);
+    font-size: 0.9em;
+    text-decoration: none;
+    display: block;
+}
+
+.conteiner-plan {
+    font-weight: 900;
+    color: var(--Dark_blue);
+    font-size: 14px;
+}
+
+.price {
+    font-weight: 500;
+    color: hsl(230, 7%, 53%);
+    font-size: 0.9em;
+}
+
+.plan .planes {
+    margin-left: -10px;
+    line-height: 7px;
+}
+
+.link-change {
+    font-weight: 700;
+    font-size: 13.6px;
+    padding-left: 30px;
+    color: var(--Bright_blue);
+}
+
+.payment:hover,
+.link-change:hover,
+.cancel:hover {
+    cursor: pointer;
+}
+
+.payment:hover {
+    background-color: rgba(118, 108, 241, 255);
+    border: 1px solid rgba(118, 108, 241, 255);
+}
+
+.link-change:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: rgba(118, 108, 241, 255);
+}
+
+.cancel:hover {
+    color: var(--Dark_blue);
+}
+
+@media screen and (min-width: 944px) {
+    body {
+        background-image: url(images/pattern-background-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .conteiner-order-summary-component {
+        width: 408px;
+        height: 632px;
+        margin-bottom: 50px;
+    }
+
+    .conteiner-hero {
+        background-image: url(images/illustration-hero.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 190px;
+    }
+
+    .conteiner-order h1 {
+        margin: 35px 0 24px;
+    }
+
+    .conteiner-order p {
+        margin-bottom: 30px;
+    }
+
+    .cancel {
+        margin-top: -21px;
+        display: block;
+    }
+
+    .plan {
+        width: 306px;
+        height: 91px;
+        padding: 0 10px;
+        margin-bottom: 28px;
+    }
+
+    .link-change {
+        margin-left: 35px;
+    }
+
+    .payment {
+        width: 316px;
+        margin-bottom: 32px;
+    }
+}
