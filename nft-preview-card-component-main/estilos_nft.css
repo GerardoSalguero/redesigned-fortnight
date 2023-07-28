@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    --Soft_blue: hsl(215, 51%, 70%);
+    --Cyan: hsla(178, 100%, 50%, 0.5);
+    --Fyan: hsla(178, 100%, 50%);
+    --Very_dark_blue1: hsl(217, 54%, 11%);
+    --Very_dark_blue2: hsl(216, 50%, 16%);
+    --Very_dark_blue3: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--Very_dark_blue1);
+    font-size: 18px;
+}
+
+.contenedor-carta-nft {
+    width: 330px;
+    height: 552px;
+    margin: 60px auto;
+    background-color: var(--Very_dark_blue2);
+    -o-border-radius: 4%;
+    -webkit-border-radius: 4%;
+    -moz-border-radius: 4%;
+    -ms-border-radius: 4%;
+    border-radius: 4%;
+    padding: 26px;
+}
+
+
+.contenedor-imagen {
+    margin: 0 auto;
+    width: 280px;
+    background-image: url(images/image-equilibrium.jpg);
+    background-repeat: no-repeat;
+    height: 280px;
+    background-position: center;
+    background-size: cover;
+    -o-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+    margin-bottom: 26px;
+    overflow: hidden;
+}
+
+.imagen-ojo {
+    height: 100%;
+    background-color: var(--Cyan);
+    width: 100%;
+    background-image: url(images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+}
+
+.imagen-ojo:hover {
+    opacity: 1;
+    cursor: pointer;
+
+}
+
+.detalle-contenedor {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -3px;
+    font-size: 0.9em;
+}
+
+
+
+.nombre-descripcion {
+    width: 280px;
+    margin: auto;
+}
+
+.nombre-descripcion h1 {
+    color: var(--White);
+    font-size: 1.3em;
+    text-align: start;
+    margin-bottom: 18px;
+}
+
+.nombre-descripcion h1:hover,
+.autor .titulo:hover {
+    color: var(--Fyan);
+    cursor: pointer;
+}
+
+.nombre-descripcion p {
+    color: var(--Soft_blue);
+    font-size: 0.9em;
+    line-height: 22px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.linea {
+    border-top: 1px solid var(--Very_dark_blue3);
+    margin: 20px auto;
+}
+
+
+.valor span {
+    color: var(--Fyan);
+    display: block;
+    margin-top: -22px;
+    margin-left: 17px;
+    font-weight: 600;
+
+}
+
+.tiempo span {
+    color: var(--Soft_blue);
+    display: block;
+    margin-top: -23px;
+    margin-left: 23px;
+    font-weight: 300;
+
+}
+
+.foto {
+    background-image: url(images/image-avatar.png);
+    background-repeat: no-repeat;
+    height: 36px;
+    width: 36px;
+    background-size: cover;
+    border: 1px solid var(--White);
+    -o-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.autor {
+    display: flex;
+    align-items: center;
+    margin-top: -7px;
+}
+
+.autor p {
+    color: var(--Soft_blue);
+    font-size: 0.9em;
+    margin-left: 15px;
+}
+
+.creador .titulo {
+    color: var(--White);
+}
+
+@media screen and (min-width:900px) {
+
+    .contenedor-carta-nft {
+        width: 354px;
+        height: 580px;
+    }
+
+    .contenedor-imagen {
+        width: 304px;
+        height: 304px;
+    }
+
+}
