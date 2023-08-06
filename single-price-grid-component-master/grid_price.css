@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --Bright_Yellow: hsl(71, 73%, 54%);
+  --Light_Gray: hsl(204, 43%, 93%);
+  --Grayish_Blue: hsl(218, 22%, 67%);
+  --White: hsl(0, 0%, 100%);
+  --Cyan_Soft: hsl(179, 51%, 61%);
+  --Grey: #b8b8bb;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 16px;
+  font-family: 'Karla', sans-serif;
+  background-color: var(--Light_Gray);
+}
+
+
+/*-----------------MOBILE----------------*/
+
+.grid_conteiner {
+  margin: 70px auto 70px;
+  overflow: hidden;
+  height: 730px;
+  width: 313px;
+  -o-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  border-radius: 8px;
+  background-color: var(--White);
+}
+
+/*--------------------Join our community-------------------*/
+.conteiner_join {
+  background-color: var(--White);
+  padding: 8px 24px 24px 24px;
+  height: 270px;
+  box-sizing: border-box;
+
+}
+
+.conteiner_join h2.title {
+  color: var(--Cyan);
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+
+
+.conteiner_join h2.promo {
+  color: var(--Bright_Yellow);
+  font-weight: 700;
+  font-size: 1em;
+  margin: 25px 0 10px 0;
+
+}
+
+.conteiner_join p {
+  font-size: 0.86em;
+  line-height: 27px;
+  color: var(--Grayish_Blue);
+  margin-top: 16px;
+}
+
+/*------------------Monthly Subscription---------------------*/
+
+.conteiner_register {
+  background-color: var(--Cyan);
+  padding: 12px 24px 24px 24px;
+  height: 230px;
+  box-sizing: border-box;
+  color: var(--Light_Gray);
+}
+
+.conteiner_register h2 {
+  font-size: 1em;
+  margin-bottom: 18px;
+}
+
+.conteiner_register .price {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+
+.conteiner_register p {
+  color: var(--White);
+  font-size: 1em;
+  font-weight: 400;
+  margin-top: 8px;
+}
+
+.conteiner_register button {
+  background-color: var(--Bright_Yellow);
+  color: var(--Light_Gray);
+  height: 48px;
+  width: 100%;
+  font-weight: 700;
+  margin-top: 34px;
+  -o-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  border-style: none;
+  font-size: 16px;
+}
+
+/*-------------------Why Us-------------------*/
+
+.conteiner_who {
+  background-color: var(--Cyan_Soft);
+  height: 230px;
+  padding: 8px 24px 24px 24px;
+  box-sizing: border-box;
+  color: var(--Light_Gray);
+}
+
+.conteiner_who h2 {
+  font-size: 18px;
+}
+
+.conteiner_who ul {
+  margin-top: 20px;
+}
+
+.conteiner_who ul li {
+  list-style-type: none;
+  font-size: 0.85em;
+  line-height: 20px;
+  font-weight: 300;
+}
+
+/*-----------------footer--------------------*/
+
+.attribution {
+  font-size: 15px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+
+/*----------------DESKTOP--------------------*/
+
+@media screen and (min-width:680px) {
+  .grid_conteiner {
+    width: 636px;
+    display: grid;
+    height: 476px;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 160px auto 100px;
+  }
+
+  .conteiner_join {
+    grid-column: 1/3;
+    height: 218px;
+    padding: 20px 35px 35px 35px;
+  }
+
+  .conteiner_join h2.title {
+    font-size: 1.45em;
+  }
+
+  .conteiner_join h2.promo {
+    font-size: 1.1em;
+  }
+
+  .conteiner_join p {
+    margin-top: 22px;
+    line-height: 27px;
+    font-size: 1em;
+  }
+
+  .conteiner_register {
+    height: 258px;
+    padding: 20px 40px 40px 40px;
+  }
+
+  .conteiner_register h2 {
+    font-size: 1.1em;
+  }
+
+  .conteiner_register p {
+    font-size: 0.95em;
+  }
+
+  .conteiner_who {
+    height: 258px;
+    padding: 20px 40px 40px 40px;
+  }
+}
